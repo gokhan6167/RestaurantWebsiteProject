@@ -1,0 +1,174 @@
+.brand-img{
+    display:inline;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+footer {
+    font-family: 'Quicksand', sans-serif;
+}
+.footer-right-link{
+    font-size: 20px;
+    position:relative;
+}
+.footer-left-link{
+    font-size: 15px;
+    position:relative;
+}
+.footer-right-link:before{
+    content:"";
+    position: absolute;
+    bottom:-2px;
+    height:2px;
+    background-color:#343a40;
+    width:0;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+.footer-right-link:hover:before{
+    width:100%;
+}
+.footer-left-link:before{
+    content:"";
+    position: absolute;
+    bottom:-2px;
+    height:2px;
+    background-color: #343a40;
+    width:0;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+.footer-left-link:hover:before{
+    width:100%;
+}
+.phone-number{
+    font-size: 25px;
+}
+.footer-logo{
+    width: 128px;
+    height:128px;
+}
+.custom-rounded{
+    border-radius: 40px;
+}
+.contact-banner{
+    display:inline;
+    position: inherit;
+    z-index: 0;
+}
+.contact-title{
+    position: absolute;
+    top:50%;
+    left:7%;
+    transform:traslate(-50%,-50%);
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+}
+.directory-text{
+    padding-left:40px;
+    font-size: 15px;
+}
+.form-link{
+    font-size:20px;
+    font-weight: bold;
+    position:relative;
+}
+.form-link:before{
+    content:"";
+    position: absolute;
+    bottom:-2px;
+    height:2px;
+    background-color: #343a40;
+    width:0;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+.form-link:hover:before{
+    width:100%;
+}
+.send-button{
+    background-color: white;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color 1s, color 1s;
+}
+.send-button:hover{
+    background-color: #343a40;
+    border-width: 1px;
+    color:white;
+}
+.page-title-banner{
+    position:relative;
+}
+.career-box-1{
+    position:absolute;
+    top:8%;
+    left:8%;
+    width: 540px;
+    height:303px;
+    background-color: transparent;
+    border-color: darkred;
+    border-width: 2px;
+    z-index: -1;
+}
+.career-box-2{
+    position:absolute;
+    bottom:-8%;
+    right:8%;
+    width: 100%;
+    height:auto;
+    max-width: 540px;
+    height:359px;
+    background-color: transparent;
+    border-color: darkred;
+    border-width: 2px;
+    z-index: -1;
+}
+.rezer{
+    text-decoration: none;
+    transition: 2s;
+    padding: 6px;
+}
+.rezer:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.button{
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .sg {
+      display: none;
+    }
+}
+.rezervasyon-btn{
+    border-width: 1px;
+    border-color: black;
+    color:black;
+    background-color: black;
+    transition: color 1s,background-color 0.5s;
+}
+.rezervasyon-btn:hover{
+    color:black;
+    background-color: #37CBF0;
+    border-color:#37CBF0;
+    border-width:1px;
+}
+a:hover{
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .sg {
+      display: none;
+    }
+  }

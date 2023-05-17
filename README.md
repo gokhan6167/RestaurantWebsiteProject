@@ -1,2 +1,2 @@
-# RestrauntWebsiteProject
- A simple yet modern restraunt website project built with Bootstrap 5
+# RestaurantWebsiteProject
+A simple yet modern restaurant website project built with Bootstrap 5

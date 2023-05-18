@@ -172,3 +172,20 @@ a:hover{
       display: none;
     }
   }
+.nav-link{
+    position:relative;
+
+}
+.nav-link:before{
+    content:"";
+    position: absolute;
+    bottom:-2px;
+    height:2px;
+    background-color:#343a40;
+    width:0;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+.nav-link:hover:before{
+    width:100%;
+}

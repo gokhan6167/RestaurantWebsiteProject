@@ -12,12 +12,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<header>
+    <div class="row justify-content-center bg-dark d-none animate__animated animate__slideInDown" id="searchBarContainer">
+        <div class="container" id="search-bar-div">
+          <form action="post" class="d-flex">
+            <input type="text" class="form-control text-white" placeholder="Aramak istediğiniz sorguyu giriniz...">
+            <button type="button" class="btn search-btn"><a href="#" class="text-decoration-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg></a>
+            </button>
+          </form>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark container-fluid">
         <div class="container-fluid">
             <img src="/img/pidevalli_logo.png" width="10%" height="10%" class="img-fluid footer-logo"><a class="navbar-brand text-dark" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+            </button>
+
             </button>
             <nav class="navbar navbar-expand-lg navbar-dark bg-white" aria-label="Tenth navbar example">
                 <div class="container-fluid">
@@ -49,12 +65,14 @@
                                 </a>
                             </li>
                             <li class="nav-item float-bottom ">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                            </li>
+                                <button class="search-button nav-link text-dark" id="searchButton">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                      class="bi bi-search" viewBox="0 0 16 16">
+                                      <path
+                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                  </svg>
+                                </button>
+                              </li>
                             <li class="nav-item sg px-2">
                                 <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true"> |
                                 </a>
@@ -68,12 +86,14 @@
                 </div>
             </nav>
     </nav>
-</head>
+</header>
 
 <body>
-    <div class="page-title-banner">
-        <img src="/img/sarıyer-banner.png" width="100%" height="100%" class="img img-fluid contact-banner shadow-lg">
-        <span class="contact-title">Sarıyer</span>
+    <div class="">
+        <div style="position: relative;" class="bg-image hover-zoom shadow-lg">
+            <img src="/img/sarıyer-banner.png" style="width: 100%; object-fit: cover;" height="300px">
+            <span class="responsive-text">Sarıyer</span>
+        </div>
     </div>
     <div class="container directory p-0 m-0">
         <p class="text-dark text-left directory-text pl-12 py-3"><b>ANA SAYFA > Şubelerimiz > Sarıyer</b></p>
@@ -265,5 +285,13 @@
     </div>
 </footer>
 <script src="/js/extra.js"></script>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+      document.getElementById('searchBarContainer').classList.toggle('d-none');
+      var searchBarDiv = document.getElementById('search-bar-div');
+      searchBarDiv.style.display = 'block';
+      searchBarDiv.classList.add('animate__fadeIn');
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

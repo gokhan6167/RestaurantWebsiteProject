@@ -14,6 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        /* Add your CSS styles here */
+
+        /* Responsive styles for small screens */
+        @media (max-width: 768px) {
+            .col-12 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+        }
+    </style>
 </head>
 <header>
     <div class="row justify-content-center bg-dark d-none animate__animated animate__slideInDown"
@@ -118,7 +130,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <ul>
                     <li>
                         <p class="text-dark">Pidevalli ailesine katılmak için burada olduğunuz için mutluyuz! Karadeniz
@@ -144,7 +156,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="container">
                     <img src="img/kariyer-img-1.jpg" class="img-fluid">
                     <div class="card career-box-1 d-none d-md-block"></div>
@@ -163,13 +175,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="container">
                     <img src="img/kariyer-img-2.jpg" class="img-fluid">
                     <div class="card career-box-2 d-none d-md-block"></div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <ul>
                     <li>
                         <p class="text-dark">
@@ -200,10 +212,7 @@
                 <button class="send-button"><b>Hemen Başvur</b></button>
             </div>
         </div>
-
-            
     </div>
-
 </body>
 <br />
 <hr />
@@ -288,22 +297,22 @@
         searchBarDiv.style.display = 'block';
         searchBarDiv.classList.add('animate__fadeIn');
     });
-    document.addEventListener('DOMContentLoaded', function() {
-    var myIcon = document.getElementById('searchButton');
-    var isIconChanged = false;  
+    document.addEventListener('DOMContentLoaded', function () {
+        var myIcon = document.getElementById('searchButton');
+        var isIconChanged = false;
 
-    myIcon.addEventListener('click', function() {
-        if (isIconChanged) {
-         
-        myIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg>';
-        isIconChanged = false;
-        } else {
-         
-        myIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>';
-        isIconChanged = true;
-        }
+        myIcon.addEventListener('click', function () {
+            if (isIconChanged) {
+
+                myIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg>';
+                isIconChanged = false;
+            } else {
+
+                myIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>';
+                isIconChanged = true;
+            }
+        });
     });
-});
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

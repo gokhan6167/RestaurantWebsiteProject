@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Anasayfa</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<header>
+    <div class="row justify-content-center bg-dark d-none animate__animated animate__slideInDown"
+        id="searchBarContainer">
+        <div class="container" id="search-bar-div">
+            <form action="post" class="d-flex">
+                <input type="text" class="form-control-search form-control text-white"
+                    placeholder="Aramak istediğiniz sorguyu giriniz...">
+                <button type="button" class="btn search-btn"><a href="#" class="text-decoration-none"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></a>
+                </button>
+            </form>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark container-fluid">
+        <div class="container-fluid">
+            <img src="./img/pidevalli_logo.png" width="10%" height="10%" class="img-fluid footer-logo"><a
+                class="navbar-brand text-dark" href="./anasayfa.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
+                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            </button>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white" aria-label="Tenth navbar example">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-md-center bg-white px-4 py-3 mx-4"
+                        id="navbarsExample08">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link  text-dark" aria-current="page"
+                                    href="./anasayfa.html">Ana Sayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-dark" aria-current="page"
+                                    href="./hakkimizda.html">Hakkımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="./kariyer.html">Kariyer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="./subelerimiz.html">Şubelerimiz</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="./iletisim.html">İletişim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="./pdf/Covid-19.pdf" target="_blank">Covid-19
+                                    Önlemler</a>
+                                
+                            </li>
+                            <li class="nav-item sg px-2">
+                                <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true"> |
+                                </a>
+                            </li>
+                            <li class="nav-item float-bottom ">
+                                <button class="search-button nav-link text-dark" id="searchButton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="nav-item sg px-2">
+                                <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true"> |
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <button type="button" class="btn rezervasyon-btn"><a href="https://www.rezervin.com/tr/"
+                                        target="_blank" class="text-decoration-none">Rezervasyon</a></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </nav>
+</header>
+<body>
+    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="100 "
+        data-bs-pause="false">
+        <div class="carousel-indicators" style="margin-bottom: 100px;font-size: 100px;">
+            <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+            <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="3000">
+                <div class="carousel-caption ">
+                </div>
+                <img src="./img/uskudar-restaurant-edited.jpg" class="d-block shadow-lg imgport tomargin"
+                    style="width: 100%;">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+                <div class="carousel-caption container-fluid2">
+
+                </div>
+                <img src="./img/PideWithedited.jpg" class="d-block shadow-lg imgport tomargin" style="width:100%">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+                <div class="carousel-caption">
+
+
+                </div>
+                <img src="./img/pideresmi5edited.jpg" class="d-block shadow-lg imgport tomargin" style="width:100%">
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid container-fluid2">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="latest-blog-posts bg-white pt60 pb60">
+        <div class="container-fluid container-fluid2">
+            <div id="owl-demo-2" class="owl-carousel owl-theme">
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/kadikoy-restaurant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Kadıköy</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Kadıköy'deki Pidevalli Pide Restoranı, eşsiz pide
+                            çeşitleriyle damakları şenlendiriyor. Misafirlerine sıcak bir atmosferde hizmet veren şube,
+                            lezzetli ve doyurucu pide seçenekleriyle beklentileri karşılıyor.</p>
+                        <p><a class="btn send-button" href="./subelerimiz/kadikoy.html"><b>Restoranta Git</b></a></p>
+
+                    </div>
+                </article>
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/sariyer-restaurant.jpeg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Sarıyer</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text"> Sarıyer'deki Pidevalli Pide Restoranı, muhteşem
+                            manzarasıyla birlikte pide keyfini zirveye taşıyor. Taze ve kaliteli malzemelerle hazırlanan
+                            pide çeşitleri, lezzet tutkunlarının beğenisini kazanıyor.</p>
+                        <p> <a href="./subelerimiz/sariyer.html" class="btn send-button"><b>Restoranta Git</b></a>
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/uskudar-restaurant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Üsküdar</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Üsküdar'daki Pidevalli Pide Restoranı, zengin aromalarıyla
+                            damakları şımartıyor. Hijyenik ortamı ve güler yüzlü personeliyle Üsküdar şubesi, pide
+                            tutkunlarını bekliyor.
+                        </p>
+                        <p> <a href="./subelerimiz/uskudar.html" class="btn send-button"><b>Restoranta Git</b></a>
+                        </p>
+
+                    </div>
+                </article>
+
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/kartalrestorant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Kartal</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Kartal'daki Pidevalli Pide Restoranı, geleneksel
+                            lezzetlerin modern sunumlarıyla fark yaratıyor. Sıcak ve lezzetli pide seçenekleriyle Kartal
+                            şubesi, her damak zevkine hitap ediyor.</p>
+                        <p> <a href="./subelerimiz/Kartal.html" class="btn send-button"><b>Restoranta Git</b></a></p>
+
+                    </div>
+                </article>
+
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/bebek-restorant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Bebek</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Bebek'teki Pidevalli Pide Restoranı, boğaz manzarası
+                            eşliğinde unutulmaz bir pide deneyimi sunuyor. Özenle seçilen malzemelerle hazırlanan pide
+                            çeşitleriyle Bebek şubesi, lezzet tutkunlarını bekliyor.</p>
+                        <p> <a href="./subelerimiz/bebek.html" class="btn send-button"><b>Restoranta Git</b></a></p>
+
+                    </div>
+                </article>
+
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/beşiktaş-restorant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">
+                                Beşiktaş Restorant</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Beşiktaş'taki Pidevalli Pide Restoranı, geleneksel tatları
+                            modern bir şekilde sunuyor. Yaratıcı pide çeşitleri ve lezzetli yan ürünleriyle Beşiktaş
+                            şubesi, pide severlere keyifli bir deneyim yaşatıyor.</p>
+                        <p> <a href="./subelerimiz/beşiktaş.html" class="btn send-button"><b>Restoranta Git</b></a>
+                        </p>
+
+                    </div>
+                </article>
+
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/ümraniye-restorant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Ümraniye</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Ümraniye'deki Pidevalli Pide Restoranı, zengin pide
+                            çeşitleriyle her damak zevkine hitap ediyor. Şık ve konforlu ortamıyla Ümraniye şubesi,
+                            ailecek veya arkadaşlarınızla lezzet dolu anlar geçirmeniz için ideal bir seçenek.
+                        </p>
+                        <p> <a href="./subelerimiz/ümraniye.html" class="btn send-button"><b>Restoranta Git</b></a>
+                        </p>
+
+                    </div>
+                </article>
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/pendik-restorant.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Pendik</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Pendik'teki Pidevalli Pide Restoranı, lezzetli ve doyurucu
+                            pide çeşitleriyle dikkat çekiyor. Kaliteli malzemelerle hazırlanan pide seçenekleri, Pendik
+                            şubesinde misafirlerine sunuluyor.</p>
+                        <p> <a href="./subelerimiz/pendik.html" class="btn send-button"><b>Restoranta Git</b></a></p>
+
+                    </div>
+                </article>
+
+
+                <article class="thumbnail item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <a class="blog-thumb-img" title="">
+                        <img src="./img/şile-restorant" class="img-responsive" />
+                    </a>
+                    <div class="caption">
+                        <h4 itemprop="headline">
+                            <a href="#" rel="bookmark">Pidevalli Şile</a>
+                        </h4>
+                        <p itemprop="text" class="flex-text">Şile'deki Pidevalli Pide Restoranı, doğanın içinde keyifli
+                            bir pide deneyimi sunuyor. Şile'nin eşsiz atmosferiyle birleşen lezzetli pide çeşitleriyle
+                            şube, doğaseverleri ağırlıyor.</p>
+                        <p> <a href="./subelerimiz/Şile.html" class="btn send-button"><b>Restoranta Git</b></a></p>
+
+                    </div>
+                </article>
+
+            </div>
+            <!-- #owl-demo-2 -->
+        </div>
+        <!-- .container -->
+
+        </section>
+
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-12">
+                    <center>
+                        <h3 class="text-dark text-decoration-underline"><b>HAKKIMIZDA</b></h3>
+                    </center>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="container">
+                        <img src="img/Chief-image-2.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                </div>
+
+
+                <br />
+                <p class="text-dark" style="font-size: 18px;">Pidevalli Pide Restoranı olarak, yıllardır Türk mutfağının
+                    en özel lezzetlerini sunan bir aile işletmesiyiz. Misafirlerimize geleneksel ve lezzetli pide
+                    çeşitleriyle unutulmaz bir deneyim yaşatmayı hedefliyoruz.
+
+                    Misyonumuz, siz değerli müşterilerimize kaliteli, taze ve lezzetli pide çeşitlerini sunarak
+                    damaklarınızı şenlendirmektir. Pide ustalarımız, geleneksel yöntemlerle hazırlanan hamurumuzu özenle
+                    yoğurur ve pideye karakteristik bir lezzet katar. Taze ve doğal malzemelerle zenginleştirdiğimiz
+                    pide çeşitlerimiz, enfes aromalarla birleşerek sizlere sunulur.
+
+                    Müşteri memnuniyetini her zaman ön planda tutuyoruz. Sıcak ve samimi bir atmosferde, güleryüzlü
+                    personelimizle sizleri ağırlamaktan mutluluk duyuyoruz. Misafirlerimizin beklentilerini karşılamak
+                    için titizlikle çalışıyor, yemeklerimizi özenle hazırlıyor ve servis ediyoruz.
+
+                    Aynı zamanda, hijyen ve temizlik konularına da büyük önem veriyoruz. Restoranımızda hijyen
+                    standartlarına uygun olarak hazırlıklarımızı gerçekleştiriyor ve hijyenik bir ortamda hizmet
+                    veriyoruz. Müşterilerimizin güvenliği ve sağlığı bizim için en öncelikli konudur.
+
+                    Pidevalli Pide Restoranı olarak, her zaman en iyiyi hedefleyen bir ekip olarak kaliteli hizmet
+                    sunmaya devam ediyoruz. Sizleri eşsiz lezzetlerimizi denemeye, keyifli bir pide deneyimi yaşamaya ve
+                    misafirlerimize özel olarak tasarladığımız konforlu mekanımızda ağırlamaya davet ediyoruz.
+
+                    Pidevalli Pide Restoranı ailesi olarak, sizleri en iyi şekilde ağırlamak ve lezzetli pide deneyimi
+                    sunmak için sabırsızlıkla bekliyoruz. Bizimle birlikte pide tutkusunu paylaşmaya ve unutulmaz anılar
+                    biriktirmeye gelin!</p>
+                <br />
+
+
+            </div>
+        </div>
+        <br />
+        <br />
+
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-2">
+
+        </div>
+        <div class="col-lg-8 card mb-3 text-bg-dark shadow-lg rounded-3" style="max-width: 50%;">
+            <img src="./img/sef-mutfak-gastronomi.webp" class="card-img-top mt-3 rounded-3" alt="..."
+                style="max-height: 600px;width:100%;align-items: center;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">KARİYER</h5>
+                <p class="card-text text-center">Pidevalli Restoranı olarak, lezzetli yemeklerle misafirlerimize
+                    unutulmaz deneyimler sunmaktan büyük bir gurur duyuyoruz. Şimdi sıra, yetenekli ve tutkulu bir birey
+                    olarak sizinle tanışmakta! <br> <br>
+                    Pidevalli Restoranı, zengin Türk mutfağının eşsiz tatlarını modern bir atmosferde sunan öncü bir
+                    restorandır. Müşteri memnuniyetini ön planda tutan ve yaratıcılığa önem veren bir ekibiz. Yüksek
+                    kaliteli malzemelerle hazırlanan pizzalarımız, pide çeşitlerimiz ve diğer lezzetli öğünlerimizle her
+                    damak tadına hitap ediyoruz. <br> <br>
+                    Sizden beklentimiz, tutkunuz ve uzmanlığınızla Pidevalli Restoranı'na katılarak bu lezzet
+                    yolculuğunda bize eşlik etmenizdir. İşbirliğine dayalı bir çalışma ortamında, yaratıcılığınızı
+                    ortaya koyabileceğiniz ve sürekli gelişim sağlayabileceğiniz bir kariyer fırsatı sunuyoruz. <br>
+                    <br>
+                    Pidevalli Restoranı'nda çalışmak, sadece bir iş değil, bir aileye katılmak demektir. Ekibimiz sıcak,
+                    samimi ve birlikte büyümeye odaklanmıştır. Yeni fikirlerinizi paylaşabileceğiniz, yeniliklere açık
+                    bir ortamda kendinizi geliştirebilirsiniz. Müşterilerimize kaliteli hizmet sunarken, iş
+                    arkadaşlarınızla dostluklar kuracak ve unutulmaz anılar biriktireceksiniz. <br> <br>
+                    Pidevalli Restoranı'na katılarak lezzetli bir kariyere adım atmak için şimdi harekete geçin! Bize
+                    katılmak istediğinizi gösterin ve sizi bekleyen birçok fırsatı keşfedin. <br> <br>
+                </p>
+                <div class="card-footer"> <p> <a href="./kariyer.html" class="btn send-button" target="_blank"><b>Bize Katıl!</b></a>
+                </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+</body>
+<br />
+<hr />
+<br />
+<footer class="footer justify-content-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-2 mb-3">
+                <h2 class="text-dark text-decoration-underline"><b>İletişim</b></h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 py-3"><a href="#" class="nav-link p-0 text-dark footer-left-link"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg><b>Acıbadem Mah. No. 212/19 Kadıköy, İstanbul</b></a></li>
+                    <li class="nav-item mb-2 py-3"><a href="#" class="nav-link p-0 text-dark footer-left-link"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg><b> 0212 212 21 21</b></a></li>
+                    <li class="nav-item mb-2 py-3"><a href="#" class="nav-link p-0 text-dark footer-left-link"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                            </svg> <b>iletisim@pidevalli.com.tr</b></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-3 offset-md-1 mb-3 justify-content-end">
+                <a href="#" class="text-decoration-none text-dark footer-right-link"><b>Bilgi Toplumu Hizmetleri</b></a>
+                <br />
+                <br />
+                <a href="#" class="text-decoration-none text-dark footer-right-link"><b>Kişisel Veri Korunumu</b></a>
+                <br />
+                <br />
+                <a href="#" class="text-decoration-none text-dark footer-right-link"><b>Çerez Politikası</b></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-8">
+                <div class="card justify-content-center" style="border:none;">
+                    <div class="card-body shadow custom-rounded card-">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p class="text-dark text-center"><b>Size Özel Ziyaretçi Hattımız!</b></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="text-dark text-center"><b><a href="tel:02122122121"
+                                            class="text-decoration-none text-dark phone-number">+90 212 212 21
+                                            21</a></b></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row border-top my-3 py-3">
+                <div class="col-3">
+                    <img src="./img/pidevalli_logo.png" width="10%" height="10%" class="img-fluid footer-logo">
+                </div>
+                <div class="col-3">
+
+                </div>
+                <div class="col-6">
+                    <p class="text-dark text-right">&copy; 2023 Pidevalli. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/extra.js"></script>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function () {
+        document.getElementById('searchBarContainer').classList.toggle('d-none');
+        var searchBarDiv = document.getElementById('search-bar-div');
+        searchBarDiv.style.display = 'block';
+        searchBarDiv.classList.add('animate__fadeIn');
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    var myIcon = document.getElementById('searchButton');
+    var isIconChanged = false;  
+
+    myIcon.addEventListener('click', function() {
+        if (isIconChanged) {
+         
+        myIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg>';
+        isIconChanged = false;
+        } else {
+         
+        myIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>';
+        isIconChanged = true;
+        }
+    });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+</html>

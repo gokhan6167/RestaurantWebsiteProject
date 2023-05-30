@@ -104,12 +104,13 @@ footer {
 .page-title-banner{
     position:relative;
 }
+
 .career-box-1{
     position:absolute;
     top:8%;
     left:8%;
     width: 540px;
-    height:303px;
+    height:340px;
     background-color: transparent;
     border-color: darkred;
     border-width: 2px;
@@ -122,12 +123,40 @@ footer {
     width: 100%;
     height:auto;
     max-width: 540px;
-    height:359px;
+    height:330px;
     background-color: transparent;
     border-color: darkred;
     border-width: 2px;
     z-index: -1;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .career-box-1 {
+    height:180px;
+    width: 320px;
+    top:6%;
+    left:12%;
+    }
+    
+    .career-box-2 {
+        height:180px;
+        width: 310px;
+        top:6%;
+        right:10%;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .career-box-1 {
+    height:270px;
+    width: 430px;
+    }
+    
+    .career-box-2 {
+      width: 430px;
+      height:270px;
+      bottom: -3%;
+    }
+}
+  
 .rezer{
     text-decoration: none;
     transition: 2s;
@@ -160,8 +189,8 @@ a{
 }
 .rezervasyon-btn:hover{
     color:black;
-    background-color: #2b6ee1;
-    border-color:#2b6ee1;
+    background-color: #277cccc2;
+    border-color:#277cccc2;
     border-width:1px;
 }
 a:hover{
@@ -372,3 +401,112 @@ a:hover{
       margin-left: 200px;
     }
 }
+.imgport {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    height: 86vb;
+  }
+  
+  .textcontain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .centered {
+    text-align: center;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 54%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  @font-face {
+    font-family: "LogoFont";
+    src: url(../img/Baristo.ttf) format("truetype");
+  }
+  
+  .bigtext {
+    font-size: 10vw;
+    font-family: "LogoFont", sans-serif;
+    color: #141f18;
+    text-shadow: #343a40;
+    opacity: 80%;
+    letter-spacing: 40px;
+  }
+  
+  .carousel-indicators li {
+    width: 60px;
+    height: 5px;
+  }
+  
+  .img2 {
+    height: 280px;
+  }
+  
+  .body2 {
+    background: hsl(0, 0, 94%);
+  }
+  
+  .text2 {
+    text-align: center;
+  }
+  .container-fluid2{
+  
+    position: relative;
+    text-align: center;
+    color: white;
+    align-items: center;
+    max-width: 1230px;
+  }
+
+  .tomargin {
+    margin-bottom: 100px;
+  }
+  
+  .owl-carousel {
+    .owl-stage {
+      display: flex;
+    }
+    .owl-item {
+      display: flex;
+      flex: 1 0 auto;
+    }
+    .caption {
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      background-color: black;
+    }
+    .flex-text {
+      flex-grow: 1;
+      color: #ffffff;
+    }
+    .thumbnail {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+    }
+  }
+  
+  .navbar-brand {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    margin-left: 0px !important;
+  }
+  
+  .img-responsive {
+    height: 300px !important;
+  }
+  
+  .juimg {
+    width: 1000px;
+  }
+  
